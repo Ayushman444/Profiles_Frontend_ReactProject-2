@@ -13,14 +13,11 @@ export const Card = (props) => {
         </div>
 
         <div className='text-center mt-7'>
-            <p className='font-bold text-2xl capitalize'>{review.name}</p>
-        </div>
-
-        <div className='text-center mt-7 '>
+            <p className='tracking-wider font-bold text-2xl capitalize'>{review.name}</p>
             <p className='text-violet-300 text-sm uppercase'>{review.job}</p>
         </div>
 
-        <div className='text-violet-400 mx-auto'>
+        <div className='text-violet-400 mx-auto mt-5'>
             <FaQuoteLeft/>
         </div>
 
@@ -28,7 +25,7 @@ export const Card = (props) => {
             {review.text}
         </div>
 
-        <div className='text-violet-400 mx-auto'>
+        <div className='text-violet-400 mx-auto mt-5'>
         <FaQuoteRight/>
         </div>
 

@@ -27,12 +27,14 @@ export const Testimonials = (props) => {
     }
 
     function surpriseHandler(){
-
+      let randomIndex = Math.floor(Math.random() * reviews.length);
+      setIndex(randomIndex)
     }
 
   return (
-    <div>
-        <Card review ={reviews[0]}/>
+    <div className='rounded-md w-[85vw] md:w-[700px] bg-white flex flex-col justify-center items-center mt-10 p-10
+     transition-all duration-700 shadow-md hover:drop-shadow-xl'>
+        <Card review ={reviews[index]}/>
 
         <div className='flex text-3xl mt-5 gap-3 text-violet-400 font-bold mx-auto'>
             <button 
@@ -48,7 +50,7 @@ export const Testimonials = (props) => {
             </button>
         </div>
 
-        <div>
+        <div className='mt-6'>
             <button 
             onClick={surpriseHandler}
             className='bg-violet-400 hover:bg-violet-500 transition-all duration-200
